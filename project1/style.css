@@ -1,0 +1,84 @@
+img.logo2{
+        float: right;
+        margin-left: 1-px    
+}
+
+.div {
+    border: 2px solid black;
+    background-color: lightpink;
+    padding: auto;
+    margin: auto;
+}
+img.align-left {
+    float: left;
+    margin-right: 100px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+}
+img.align-right {
+    float: right;
+    margin-left: 20px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+}
+.para {
+    padding-top: 150px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+}
+/* Style the navigation menu */
+.navbar {
+    width: 100%;
+    overflow: auto;
+    text-align: center;
+}
+  
+  /* Navigation links */
+  .navbar a {
+    text-align: center;
+    color: blue;
+    text-decoration: none;
+    font-size: 30px;
+    
+     /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+     /* If you want the text to be centered */
+  }
+  .h {
+      text-align: center;
+      text-decoration: bold;
+  }
+
+  .border {
+	display: grid;
+	place-items: center;
+	border: 2px solid;
+	padding: auto;
+    margin: auto;
+    min-width: 300px;
+    min-height: 300px;
+    background-color: silver;
+}
+
+.img_container{
+	display: flex;
+	justify-content: center;
+}
+.img_item{
+	width:300px;
+	padding: 5px;
+}
+.left {
+    float: left;
+    margin-right: 0px;
+   
+    padding-left: 270px;
+}
+.right {
+    float: right;
+    margin-left: 0px;
+    padding-right: 270px;   
+}
+.img_border {
+    border: 2px solid;
+    box-sizing: auto;
+}
