@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>show model</title>
+</head>
+<body>
+    <button class="trigger">Click here to trigger the modal!</button>
+<div class="modal">
+    <div class="modal-content">
+        <span class="close-button">×</span>
+        <header>This is the model header</header>
+        <h1 class="show-model">Hello, I am a modal!</h1>
+        <p>This is this a paragraph inside the model</p>
+        <footer>The model footer</footer>
+
+    </div>
+</div>
+<script>
+    const modal = document.querySelector(".modal");
+    const trigger = document.querySelector(".trigger");
+    const closeButton = document.querySelector(".close-button");
+
+    function toggleModal() {
+    modal.classList.toggle("show-modal");
+}
+
+    function windowOnClick(event) {
+    if (event.target === modal) {
+        toggleModal();
+    }
+}
+
+trigger.addEventListener("click", toggleModal);
+closeButton.addEventListener("click", toggleModal);
+window.addEventListener("click", windowOnClick); 
+</script>
+</body>
+</html>

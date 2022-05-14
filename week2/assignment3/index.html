@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>main</title>
+</head>
+<body>
+<div class="img_container">
+    <div class="border1">
+    <img src="images/img1.jpg" class="img_size" alt="Sweets"><caption><br>Description of First Product</caption><br>
+    <button class="trigger" id="tr">Open Model Link I</button>
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close-button">×</span>
+            <header><h1 class="show-model model-header">Modal Windal Example</h1></header>
+            <p class="model-para">This is this a paragraph inside the message window. This is this a paragraph inside the message window.
+                This is this a paragraph inside the message window.
+            </p>
+            <img src="images/img3.jpg" alt="model" class="pad">
+        </div>
+    </div>
+</div>
+<div class="border1">
+    <img src="images/img2.jpg" alt="Sweets" class="img_size"><br>
+    <caption>Description of Second Product</caption><br>
+    <button class="trigger" id="tr">Open Model Link II</button>
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close-button">×</span>
+            <header><h1 class="show-model model-header">Modal Windal Example</h1></header>
+            <p class="model-para">This is this a paragraph inside the message window. This is this a paragraph inside the message window.
+                This is this a paragraph inside the message window.
+            </p>
+            <img src="images/img3.jpg" alt="model" class="pad">
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<script>
+    const modal = document.querySelector(".modal");
+    const trigger = document.querySelector(".trigger");
+    const closeButton = document.querySelector(".close-button");
+
+    function toggleModal() {
+    modal.classList.toggle("show-modal");
+}
+
+    function windowOnClick(event) {
+    if (event.target == modal) {
+        toggleModal();
+    }
+}
+trigger.addEventListener("click", toggleModal);
+closeButton.addEventListener("click", toggleModal);
+window.addEventListener("click", windowOnClick); 
+</script>
+</body>
+</html>
